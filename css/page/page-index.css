@@ -1,0 +1,20 @@
+/* Page - index */
+
+
+/* Footer */
+.footer-container {
+    background-color: rgb(36, 36, 36);
+    color: white;
+    width: 100%;
+}
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer-social--logo {
+    height: 24px;
+    width: 24px;
+}
+
+/* Résponsivité */

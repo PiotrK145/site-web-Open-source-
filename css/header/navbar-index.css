@@ -1,26 +1,38 @@
 /* Navigation bar - Index */
 /* Large */
 .navigation-bar-large {
+    display: grid;
+    place-items: center;
+    height: 75px;
     background-color: rgb(255, 86, 86);
 }
 .navbar-flex {
     display: flex;
+    justify-content: center;
+    gap: 50px;
 }
 .navbar--img {
     height: 64px;
     width: 64px;
 }
 .navbar-list {
+    display: grid;
+    place-items: center;
     display: flex;
     flex-direction: row;
     list-style: none;
+    text-align: center;
+    gap: 20px;
 }
-.navbar-link {
+.nav-link {
+    font-size: 18px;
     color: black;
+    text-decoration: none;
 }
-.navbar-link:hover {
+.nav-link:hover {
     font-weight: 700;
     border-bottom: 4px solid red;
+    border-radius: 4px;
 }
 
 /* Smal - Mobile */
@@ -30,8 +42,20 @@
 
 /* Responsivité */
 /* Mobile */
-@media(max-widht: 500px) {
-    .navigation-bar-mobile {
-        display: contents;
+@media(max-width: 500px) {
+    .navigation-bar-large {
+        display: none;
+    }
+    .navbar-img-mobile {
+        height: 48px;
+        width: 48px;
+    }
+    .navbar-mobile-menu-burger {
+        height: 48px;
+        width: 48px;
+        cursor: pointer;
+    }
+    .navbar-content-mobile {
+        display: none;
     }
 }
