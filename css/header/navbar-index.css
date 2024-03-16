@@ -1,0 +1,37 @@
+/* Navigation bar - Index */
+/* Large */
+.navigation-bar-large {
+    background-color: rgb(255, 86, 86);
+}
+.navbar-flex {
+    display: flex;
+}
+.navbar--img {
+    height: 64px;
+    width: 64px;
+}
+.navbar-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.navbar-link {
+    color: black;
+}
+.navbar-link:hover {
+    font-weight: 700;
+    border-bottom: 4px solid red;
+}
+
+/* Smal - Mobile */
+.navigation-bar-mobile {
+    display: none;
+}
+
+/* Responsivité */
+/* Mobile */
+@media(max-widht: 500px) {
+    .navigation-bar-mobile {
+        display: contents;
+    }
+}
